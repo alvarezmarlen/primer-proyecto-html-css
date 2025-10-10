@@ -10,7 +10,7 @@
 
         header {
             min-height: 8rem;            
-            background-color: pink;
+            background-color: rgb(214, 187, 9);
 
         }
 
@@ -25,7 +25,8 @@
             background-color: lightblue;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-between;
+
         } 
         
         main div{
@@ -43,3 +44,14 @@
             background-color: darkorange;
         }    
 
+   
+
+        /* aqui voy a trabajar con las Media Querys */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+            main {flex-direction: column;}
+
+            main div{width: 95%;}
+        }
