@@ -25,14 +25,20 @@
             background-color: lightblue;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
+ 
 
-        } 
+        }
+        
+        main img{
+            width: 32%;
+            margin-top: 0.3rem;
+                }
         
         main div{
             border: 0.3rem  solid black;
             width: 30%;
-            text-align:justify;
+
         }
 
         .izda{background-color: aqua;}
@@ -42,16 +48,35 @@
         footer{
             min-height: 7rem;
             background-color: darkorange;
+            border: 1rem solid orangered;
         }    
 
    
 
         /* aqui voy a trabajar con las Media Querys */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 650px) {
             body {
                 background-color: lightgreen;
             }
-            main {flex-direction: column;}
+            main {flex-direction: row;
+                 align-items: center;
+            }
 
-            main div{width: 95%;}
+            /*  main div{width: 40%;} */
+              main img { width: 40%;}
+        }
+        
+        
+        
+        @media screen and (max-width: 350px) {
+            body {
+                background-color: red;
+            }
+/* 
+            main div {
+                    flex-direction: column;
+                    width: 95%;
+            } */
+            main img { flex-direction: column;
+                width: 95%;}
         }
