@@ -3,6 +3,18 @@
             margin: 0;
             box-sizing: border-box;
         }
+
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
         header, nav, main, footer{
             width: 80%;
             margin: 0 auto;
@@ -10,13 +22,50 @@
 
         header {
             min-height: 8rem;            
-            background-color: rgb(214, 187, 9);
+            background-color: green;
 
         }
 
         nav{
-            min-height: 4rem;
-            background-color: orange;
+            min-height: 6rem;
+            background-color: orange;  
+        } 
+        
+        nav ul {
+            background-color: aqua;
+            min-height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        
+        nav ul li {
+            height: 2.3rem;
+            border: 0.2rem solid black;
+            margin: 0.3rem;
+            width: 7rem;
+            border-radius: 1rem;
+
+       }
+        
+        nav ul li a {
+            color: aliceblue;
+            background-color: blueviolet;
+            display: block;
+            height: 1.9rem;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300px;
+            font-style: italic;
+            border-radius: 1rem;
+        }
+        
+        nav ul li a:hover {
+            color: blueviolet;
+            background-color: aliceblue;
+            transition: 1s;
         }
         
         
@@ -26,7 +75,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
- 
+            
 
         }
         
