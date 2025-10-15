@@ -107,25 +107,42 @@
             body {
                 background-color: lightgreen;
             }
+            nav ul {
+                flex-direction: column;
+                  
+            }           
+            
+            nav ul li{
+                width: 20rem;                
+            }
+
             main {flex-direction: row;
                  align-items: center;
             }
-
             /*  main div{width: 40%;} */
               main img { width: 40%;}
         }
         
         
         
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 423px) {
             body {
                 background-color: red;
+            }
+
+            header {
+                display: none;
+            }
+
+            nav ul li{
+                width: 95%;                
             }
 /* 
             main div {
                     flex-direction: column;
                     width: 95%;
             } */
+
             main img { flex-direction: column;
                 width: 95%;}
         }
