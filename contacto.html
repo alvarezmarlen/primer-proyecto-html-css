@@ -65,9 +65,11 @@
         <div class="content">
             <form action="recogida_datos.php" method="get">
                 <p>Nombre</p>
-                <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                <input id="inpt1" type="text" name="nombre" placeholder="Escribe tu nombre" required>
                 <p>Desplazamiento</p>
-                <input type="text" name="desplazamiento" placeholder="Medio transporte">
+                <input type="text" name="desplazamiento" value="Metro">
+                <p>Password</p>
+                <input type="password">
                 <br> <br>
                 <button type="submit">ENVIAR</button>
             </form>
